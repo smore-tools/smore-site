@@ -2,43 +2,43 @@
   "namespace": "App",
   "fsNamespace": "app",
   "loader": "../app.js",
-  "corePolyfilled": "es5-build-disabled.js",
   "global": "app.global.js",
-  "core": "app.core.js",
+  "core": "app.lk58ggrf.js",
+  "corePolyfilled": "app.jjjel0pb.js",
   "components": {
     "app-home": {
       "bundleIds": {
-        "$": "app-home"
+        "$": "weqqlfag"
       }
     },
     "app-profile": {
       "bundleIds": {
-        "$": "app-profile"
+        "$": "ucc3bman"
       }
     },
     "app-root": {
       "bundleIds": {
-        "$": "app-root"
+        "$": "sbxbrdcc"
       }
     },
     "stencil-route": {
       "bundleIds": {
-        "$": "app-root"
+        "$": "sbxbrdcc"
       }
     },
     "stencil-route-link": {
       "bundleIds": {
-        "$": "app-home"
+        "$": "weqqlfag"
       }
     },
     "stencil-route-switch": {
       "bundleIds": {
-        "$": "app-root"
+        "$": "sbxbrdcc"
       }
     },
     "stencil-router": {
       "bundleIds": {
-        "$": "app-root"
+        "$": "sbxbrdcc"
       }
     }
   }

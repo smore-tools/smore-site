@@ -7,7 +7,8 @@
     "build": "stencil build --prerender",
     "start": "stencil build --dev --watch --serve",
     "test": "jest",
-    "test.watch": "jest --watch"
+    "test.watch": "jest --watch",
+    "deploy": "npm run build && git add dist && git commit -m \"deploy\" && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@stencil/core": "^0.11.0",
