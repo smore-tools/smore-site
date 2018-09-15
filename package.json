@@ -8,7 +8,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "jest",
     "test.watch": "jest --watch",
-    "predeploy": "npm run build && cp ./static/CNAME ./dist && mv ./dist/404/index.html ./dist/404.html && rm -rf ./dist/404",
+    "predeploy": "npm run build && node scripts/predeploy.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -19,7 +19,8 @@
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "gh-pages": "^1.2.0",
-    "jest": "^23.4.2"
+    "jest": "^23.4.2",
+    "rimraf": "^2.6.2"
   },
   "repository": {
     "type": "git",
