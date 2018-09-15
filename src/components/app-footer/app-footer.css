@@ -4,6 +4,12 @@ footer {
   margin-bottom: -2em;
 }
 
+::selection {
+  background-color: white;
+  color: black;
+  text-decoration-color: black;
+}
+
 footer .container {
   height: 56px;
   display: flex;
