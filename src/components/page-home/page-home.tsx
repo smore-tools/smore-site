@@ -102,6 +102,10 @@ export class Home {
 
         </section>
 
+        <section class="hidden">
+          <stencil-route-link url='/404'>404</stencil-route-link>
+        </section>
+
       </article>
     );
   }

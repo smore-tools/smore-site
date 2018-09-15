@@ -8,7 +8,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "jest",
     "test.watch": "jest --watch",
-    "predeploy": "npm run build && cp ./static/CNAME ./dist && cp ./dist/index.html ./dist/404.html",
+    "predeploy": "npm run build && cp ./static/CNAME ./dist && mv ./dist/404/index.html ./dist/404.html && rm -rf ./dist/404",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

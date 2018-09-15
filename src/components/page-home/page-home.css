@@ -185,3 +185,7 @@ section.next-steps .buttons stencil-route-link button {
     width: auto;
   }
 }
+
+section.hidden {
+  display: none;
+}
