@@ -1,9 +1,4 @@
 .notfound {
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 64px 12px 128px;
-
     text-align: center;
 }
 
@@ -15,6 +10,7 @@
 }
 
 .notfound h1 {
+    margin-top: 64px;
     font-size: 3em;
     color: rgba(0,0,0,0.54);
 }
