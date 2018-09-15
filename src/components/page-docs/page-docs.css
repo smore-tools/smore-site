@@ -23,6 +23,10 @@
     transition: transform 200ms cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+.docs nav {
+    margin-top: 1.83em;
+}
+
 .docs article {
     transition: transform 200ms cubic-bezier(0.23, 1, 0.320, 1);
 }
