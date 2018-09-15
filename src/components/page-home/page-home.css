@@ -152,7 +152,7 @@ section.benefits p {
 section.next-steps {
   width: 100%;
   max-width: 1080px;
-  margin: 128px 0;
+  margin: 128px auto;
   text-align: center;
 }
 
