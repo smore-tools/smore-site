@@ -26,7 +26,6 @@ declare global {
 }
 
 import '@stencil/router';
-import '@stencil/state-tunnel';
 
 import {
   MatchResults,
@@ -224,6 +223,39 @@ declare global {
   }
   namespace JSXElements {
     export interface PageHomeAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageNotfound {
+
+    }
+  }
+
+  interface HTMLPageNotfoundElement extends StencilComponents.PageNotfound, HTMLStencilElement {}
+
+  var HTMLPageNotfoundElement: {
+    prototype: HTMLPageNotfoundElement;
+    new (): HTMLPageNotfoundElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-notfound': HTMLPageNotfoundElement;
+  }
+  interface ElementTagNameMap {
+    'page-notfound': HTMLPageNotfoundElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-notfound': JSXElements.PageNotfoundAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageNotfoundAttributes extends HTMLAttributes {
 
     }
   }
