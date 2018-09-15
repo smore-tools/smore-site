@@ -9,7 +9,7 @@ export class Demos {
 
     render() {
         return (
-            <div class="demos">
+            <div class="page demos">
                 <p>
                     Hello! My name is demos!
                 </p>

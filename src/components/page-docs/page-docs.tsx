@@ -13,7 +13,7 @@ export class Docs {
     render() {
         if (this.match && this.match.params.name) {
             return (
-                <div class="docs">
+                <div class="page docs">
                     <p>
                         Hello! My name is {this.match.params.name}.
                         My name was passed in through a route param!

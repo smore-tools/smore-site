@@ -9,7 +9,7 @@ export class PageNotfound {
 
     render() {
         return (
-            <div class="notfound">
+            <div class="page notfound">
                 <h1>Oops!</h1>
                 <h3>We couldn't find the page you were looking for...</h3>
                 <p>
