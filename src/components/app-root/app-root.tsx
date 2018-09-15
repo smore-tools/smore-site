@@ -12,9 +12,6 @@ export class AppRoot {
         <app-header />,
         <main>
           <stencil-router>
-            
-            <stencil-router-redirect url='/docs/introduction' root='/docs' />
-
             <stencil-route-switch scrollTopOffset={0}>
               <stencil-route url='/' component='page-home' exact={true} />
               <stencil-route url='/docs/:name' component='page-docs' />
@@ -23,6 +20,7 @@ export class AppRoot {
               <stencil-route component='page-notfound'></stencil-route>
             </stencil-route-switch>
           </stencil-router>
+          <stencil-router-redirect url='/docs/introduction' root='/docs' />
         </main>,
         <app-footer />
     ];
