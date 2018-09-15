@@ -152,8 +152,7 @@ section.benefits p {
 section.next-steps {
   width: 100%;
   max-width: 1080px;
-  margin: 128px auto;
-  padding: 0 12px;
+  margin: 128px 0;
   text-align: center;
 }
 
@@ -167,6 +166,22 @@ section.next-steps .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column nowrap;
+}
+
+section.next-steps .buttons stencil-route-link,
+section.next-steps .buttons stencil-route-link button {
+  width: calc(100% - 24px);
+}
+
+@media (min-width: 640px) {
+  section.next-steps .buttons {
+    flex-flow: row nowrap;
+  }
+  section.next-steps .buttons stencil-route-link,
+  section.next-steps .buttons stencil-route-link button {
+    width: auto;
+  }
 }
 
 button {
