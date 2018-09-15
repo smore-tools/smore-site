@@ -14,7 +14,7 @@ interface MenuItem {
 export class Header {
 
     private menu: MenuItem[] = [
-        { title: 'Docs', url: 'docs/introduction' },
+        { title: 'Docs', url: '/docs/introduction' },
         { title: 'Demos', url: 'demos' },
         { title: 'GitHub', url: 'https://github.com/smore-tools/smore', isExternal: true }
     ]
