@@ -54,8 +54,8 @@ export class Header {
             <header class="fixed">
                 <div class="container">
                     <stencil-route-link class="logo-link" url="/">
-                        <img class="logo" src="assets/logo/logo-black.svg" alt="icon" />
-                        <img class="wordmark" src="assets/logo/wordmark.svg" alt="s'more" />
+                        <img class="logo" src="/assets/logo/logo-black.svg" alt="icon" />
+                        <img class="wordmark" src="/assets/logo/wordmark.svg" alt="s'more" />
                     </stencil-route-link>
                     <nav>
                         <ul>
