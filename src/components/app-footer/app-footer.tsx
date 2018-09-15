@@ -14,7 +14,7 @@ export class Footer {
             <footer>
                 <div class="container">
                     <p>Built with <Heart /> by <a href="https://twitter.com/n_moore">Nate Moore</a></p>
-                    <p class="license">Released under MIT License <span class="separator">/</span> © 2018</p>
+                    <p class="license"><a href="https://github.com/smore-tools/smore-site">Source</a> <span class="separator">/</span> Released under MIT License <span class="separator">/</span> © 2018</p>
                 </div>
             </footer>
         );
