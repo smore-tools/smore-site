@@ -127,6 +127,10 @@ section.benefits .container {
   grid-gap: 16px;
 }
 
+section.benefits p {
+  margin-left: 2em;
+}
+
 @media (min-width: 640px) {
   section.benefits .container {
     grid-template-columns: repeat(2, 1fr);
