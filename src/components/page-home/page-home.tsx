@@ -11,7 +11,11 @@ export class Home {
 
   @Element() el: HTMLElement;
 
+  @State() isAnimating = false;
   @State() showCopiedConfirm: number;
+  @State() x = 0;
+  @State() y = 0;
+
 
   @Listen('keydown.enter')
   @Listen('keydown.space')
@@ -23,6 +27,18 @@ export class Home {
         event.preventDefault();
       }
     }
+  }
+
+  private handleMouseLeave() {
+    this.x = 0;
+    this.y = 0;
+  }
+
+  private handleMouseMove(ev: MouseEvent) {
+    const { width, height } = (ev.target as HTMLElement).getBoundingClientRect();
+    const { offsetX, offsetY } = ev;
+    this.x = (0.5 - offsetX / width) * -1;
+    this.y = (0.5 - offsetY / height) * -1;
   }
 
   private handlePromptClick() {
@@ -49,11 +65,26 @@ export class Home {
       }, 1500);
   }
 
+  hostData() {
+    return {
+      class: {
+        animating: this.x !== 0 && this.y !== 0
+      },
+      style: {
+        '--x': this.x,
+        '--y': this.y
+      }
+    }
+  }
+
   render() {
     return (
       <article class="app-home">
         
-        <section class="hero">
+        <section class="hero"
+          onMouseMove={(e) => this.handleMouseMove(e)}
+          onMouseLeave={() => this.handleMouseLeave()}
+        >
           <img class="forest" src="/assets/images/hero.svg" alt="forest"/>
           <div>
             <img class="logo" src="/assets/logo/logo-color.svg" alt="S'more Logo" />
