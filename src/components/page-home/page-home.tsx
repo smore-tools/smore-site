@@ -1,4 +1,4 @@
-import { Component, Element, State } from '@stencil/core';
+import { Component, Element, State, Listen } from '@stencil/core';
 
 
 @Component({
@@ -12,6 +12,18 @@ export class Home {
   @Element() el: HTMLElement;
 
   @State() showCopiedConfirm: number;
+
+  @Listen('keydown.enter')
+  @Listen('keydown.space')
+  protected keydownHandler(event: KeyboardEvent) {
+    if ((event.target as HTMLElement).id === 'prompt-highlight') {
+      this.handlePromptClick();
+
+      if (event.key === " ") {
+        event.preventDefault();
+      }
+    }
+  }
 
   private handlePromptClick() {
       const codeElParent = this.el.querySelector('.prompt');
@@ -42,9 +54,12 @@ export class Home {
       <article class="app-home">
         
         <section class="hero">
-          <img class="logo" src="/assets/logo/logo-color.svg" alt="S'more Logo" />
-          <h3 class="pretagline">Modern, modular Web Components chock-full of</h3>
-          <h2 class="tagline">Gooey GUI Goodness</h2>
+          <img class="forest" src="/assets/images/hero.svg" alt="forest"/>
+          <div>
+            <img class="logo" src="/assets/logo/logo-color.svg" alt="S'more Logo" />
+            <h3 class="pretagline">Modern, modular Web Components chock-full of</h3>
+            <h2 class="tagline">Gooey GUI Goodness</h2>
+          </div>
         </section>
 
         <section class="cta">
@@ -52,7 +67,7 @@ export class Home {
             <div class="dots"> <span/> <span/> <span/> </div>
             <span class="symbol">❯ </span>
             <div class="text">
-              <span class="highlight" onClick={() => this.handlePromptClick()}>{this.prompt}</span>
+              <span class="highlight" id="prompt-highlight" tabIndex={0} onClick={() => this.handlePromptClick()}>{this.prompt}</span>
               <span class="copy-confirm">Copied!</span>
             </div>
           </div>
