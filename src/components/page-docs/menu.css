@@ -44,10 +44,12 @@
 }
 
 .docs .submenu li a:active,
+.docs .submenu li a.link-active:hover,
 .docs .submenu li a.link-active {
     color: var(--color-accent);
     font-weight: bold;
 }
+
 
 @media (min-width: 640px) {
 
