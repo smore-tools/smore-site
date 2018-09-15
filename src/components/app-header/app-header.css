@@ -1,3 +1,11 @@
+:host {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 header {
   position: relative;
   background: white;

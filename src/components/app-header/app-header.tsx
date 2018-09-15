@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, State } from '@stencil/core';
 import { External } from './icons';
 
 interface MenuItem {
@@ -9,7 +9,8 @@ interface MenuItem {
 
 @Component({
     tag: 'app-header',
-    styleUrl: 'app-header.css'
+    styleUrl: 'app-header.css',
+    shadow: true
 })
 export class Header {
 
@@ -18,6 +19,8 @@ export class Header {
         { title: 'Demos', url: '/demos' },
         { title: 'GitHub', url: 'https://github.com/smore-tools/smore', isExternal: true }
     ]
+
+    @State() pinned = false;
 
     renderMenuItem({ title, url, isExternal }: MenuItem) {
         if (!isExternal) {
@@ -38,9 +41,17 @@ export class Header {
         }
     }
 
+    hostData() {
+        return {
+            class: {
+                'is-pinned': this.pinned
+            }
+        }
+    }
+
     render() {
         return (
-            <header>
+            <header class="fixed">
                 <div class="container">
                     <stencil-route-link class="logo-link" url="/">
                         <img class="logo" src="assets/logo/logo-black.svg" alt="icon" />
