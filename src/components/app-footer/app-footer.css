@@ -1,0 +1,36 @@
+footer {
+  background: black;
+  color: white;
+  margin-bottom: -2em;
+}
+
+footer .container {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1080px;
+  padding: 0 12px;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.75em;
+}
+
+footer svg {
+  width: 1em;
+  height: 1em;
+  margin: -0.125em 0.125em;
+  fill: white;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+a:hover {
+  color: white;
+}

@@ -26,7 +26,6 @@ declare global {
 }
 
 import '@stencil/router';
-import '@stencil/state-tunnel';
 
 import {
   MatchResults,
@@ -35,30 +34,30 @@ import {
 declare global {
 
   namespace StencilComponents {
-    interface AppHome {
+    interface AppFooter {
 
     }
   }
 
-  interface HTMLAppHomeElement extends StencilComponents.AppHome, HTMLStencilElement {}
+  interface HTMLAppFooterElement extends StencilComponents.AppFooter, HTMLStencilElement {}
 
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  var HTMLAppFooterElement: {
+    prototype: HTMLAppFooterElement;
+    new (): HTMLAppFooterElement;
   };
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'app-footer': HTMLAppFooterElement;
   }
   interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'app-footer': HTMLAppFooterElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-home': JSXElements.AppHomeAttributes;
+      'app-footer': JSXElements.AppFooterAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
+    export interface AppFooterAttributes extends HTMLAttributes {
 
     }
   }
@@ -68,31 +67,31 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface AppProfile {
-      'match': MatchResults;
+    interface AppHeader {
+
     }
   }
 
-  interface HTMLAppProfileElement extends StencilComponents.AppProfile, HTMLStencilElement {}
+  interface HTMLAppHeaderElement extends StencilComponents.AppHeader, HTMLStencilElement {}
 
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  var HTMLAppHeaderElement: {
+    prototype: HTMLAppHeaderElement;
+    new (): HTMLAppHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
+    'app-header': HTMLAppHeaderElement;
   }
   interface ElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
+    'app-header': HTMLAppHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-profile': JSXElements.AppProfileAttributes;
+      'app-header': JSXElements.AppHeaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
-      'match'?: MatchResults;
+    export interface AppHeaderAttributes extends HTMLAttributes {
+
     }
   }
 }
@@ -125,6 +124,105 @@ declare global {
   }
   namespace JSXElements {
     export interface AppRootAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageDemos {
+
+    }
+  }
+
+  interface HTMLPageDemosElement extends StencilComponents.PageDemos, HTMLStencilElement {}
+
+  var HTMLPageDemosElement: {
+    prototype: HTMLPageDemosElement;
+    new (): HTMLPageDemosElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-demos': HTMLPageDemosElement;
+  }
+  interface ElementTagNameMap {
+    'page-demos': HTMLPageDemosElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-demos': JSXElements.PageDemosAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageDemosAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageDocs {
+      'match': MatchResults;
+    }
+  }
+
+  interface HTMLPageDocsElement extends StencilComponents.PageDocs, HTMLStencilElement {}
+
+  var HTMLPageDocsElement: {
+    prototype: HTMLPageDocsElement;
+    new (): HTMLPageDocsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-docs': HTMLPageDocsElement;
+  }
+  interface ElementTagNameMap {
+    'page-docs': HTMLPageDocsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-docs': JSXElements.PageDocsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageDocsAttributes extends HTMLAttributes {
+      'match'?: MatchResults;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface PageHome {
+
+    }
+  }
+
+  interface HTMLPageHomeElement extends StencilComponents.PageHome, HTMLStencilElement {}
+
+  var HTMLPageHomeElement: {
+    prototype: HTMLPageHomeElement;
+    new (): HTMLPageHomeElement;
+  };
+  interface HTMLElementTagNameMap {
+    'page-home': HTMLPageHomeElement;
+  }
+  interface ElementTagNameMap {
+    'page-home': HTMLPageHomeElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'page-home': JSXElements.PageHomeAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface PageHomeAttributes extends HTMLAttributes {
 
     }
   }

@@ -1,0 +1,147 @@
+header {
+  position: relative;
+  background: white;
+  color: black;
+  height: 56px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.06);
+  z-index: 1;
+}
+
+header .container {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1080px;
+  padding: 0 12px;
+  margin: auto;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo-link a {
+  display: flex;
+}
+
+.logo-link .logo {
+  height: 48px;
+  margin: auto;
+  transform: scale(0.9);
+  transition: transform 250ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.logo-link .wordmark {
+  height: 26px;
+  margin: auto;
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.logo-link:hover .logo,
+.logo-link:focus .logo,
+.logo-link:active .logo {
+  transform: scale(1);
+}
+
+.logo-link:hover .wordmark,
+.logo-link:focus .wordmark,
+.logo-link:active .wordmark {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-display);
+  font-size: 13px;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 12px;
+  opacity: 0.54;
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+
+nav ul li::after {
+  content: '';
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-accent);
+  opacity: 0;
+  transform-origin: left center;
+  transform: translateX(-12px) scaleX(0);
+  transition: all 250ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+nav ul li.external {
+  margin-bottom: 2px;
+  opacity: 1;
+  transition: all 150ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+nav ul li.external span {
+  opacity: 0.54;
+  transition: all 150ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+nav ul li.external::after {
+  content: none;
+}
+nav ul li.external a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li:first-of-type {
+  padding-left: 0;
+}
+nav ul li:last-of-type {
+  padding-right: 0;
+}
+
+nav ul li:hover {
+  opacity: 0.87;
+}
+nav ul li.external:hover {
+  opacity: 1;
+}
+nav ul li.external:hover span {
+  opacity: 0.87;
+}
+nav ul li.external:hover .icon-external .box {
+  fill: var(--color-primary);
+}
+nav ul li.external .icon-external .arrow {
+  transform: translate(-2px, 2px);
+  transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+nav ul li.external:hover .icon-external .arrow {
+  transform: translate(0, 0);
+}
+nav ul li.external:hover .icon-external .arrow path {
+  stroke: black;
+  stroke-width: 3px;
+}
+
+nav ul li:hover::after {
+  opacity: 1;
+  transform: translateX(0) scaleX(1); 
+}
+
+nav .icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  margin-right: -4px;
+  margin-top: -4px;
+}
