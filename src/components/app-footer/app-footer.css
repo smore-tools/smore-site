@@ -43,3 +43,7 @@ a {
 a:hover {
   color: white;
 }
+
+footer .separator {
+  color: rgba(255, 255, 255, 0.5);
+}
