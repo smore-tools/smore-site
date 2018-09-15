@@ -10,7 +10,6 @@ export class PageNotfound {
     render() {
         return (
             <div class="page notfound">
-                
                 <img src="/assets/images/notfound.svg" alt="campfire"/>
                 <h2>We couldn't find the page you were looking for...</h2>
                 <stencil-route-link url='/'>
