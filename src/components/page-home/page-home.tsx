@@ -57,7 +57,7 @@ export class Home {
           <img class="forest" src="/assets/images/hero.svg" alt="forest"/>
           <div>
             <img class="logo" src="/assets/logo/logo-color.svg" alt="S'more Logo" />
-            <h3 class="pretagline">Modern, modular Web Components chock-full of</h3>
+            <h3 class="pretagline">Modern, modular web component library chock-full of</h3>
             <h2 class="tagline">Gooey GUI Goodness</h2>
           </div>
         </section>
