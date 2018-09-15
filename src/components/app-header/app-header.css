@@ -6,6 +6,10 @@
   z-index: 1;
 }
 
+::selection {
+  background-color: var(--color-notify);
+}
+
 header {
   position: relative;
   background: white;

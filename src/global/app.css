@@ -10,6 +10,10 @@ body {
   min-height: 100vh;
 }
 
+::selection {
+  background-color: var(--color-notify);
+}
+
 .hydrated {
   display: block;
 }

@@ -61,28 +61,28 @@ export class Home {
         <section class="benefits">
           <div class="container">
             <div>
-              <h3>Unique</h3>
+              <h3>🌚 Unique</h3>
               <p>You won't find yet another set of buttons and nav menus here, but you will find a unique range of handy micro-interactions.</p>
             </div>
             <div>
-              <h3>Unopinionated</h3>
+              <h3>🧐 Unopinionated</h3>
               <p>Style your app, your way. You won't have to wrestle with any S'more-specific styling.</p>
             </div>
             <div>
-              <h3>Modular</h3>
+              <h3>📦 Modular</h3>
               <p>Install only what you need, when you need it. Each component is its own module.</p>
             </div>
             <div>
-              <h3>Modern</h3>
+              <h3>🆕 Modern</h3>
               <p>Built on modern web-standards, supported in all your favorite browsers.</p>
             </div>
             <div>
-              <h3>Flexible</h3>
+              <h3>💎 Flexible</h3>
               <p>Built with <a href="https://stenciljs.com">Stencil</a>, S'more components can be used with any framework (or no framework at all!)</p>
             </div>
             <div>
-              <h3>Fast</h3>
-              <p>Speed up your work flow by relying on our library of common UI patterns.</p>
+              <h3>🎉 Fun</h3>
+              <p>With an emphasis on <em>surprise and delight</em>, S'more is as fun for developers as it is for end-users!</p>
             </div>
           </div>
         </section>
