@@ -10,8 +10,17 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   max-width: 1080px;
-  padding: 0 12px;
+  padding: 24px 12px;
   margin: auto;
+
+  flex-flow: column nowrap;
+}
+
+@media (min-width: 640px) {
+  footer .container {
+    flex-flow: row nowrap;
+    padding: 12px;
+  }
 }
 
 p {
