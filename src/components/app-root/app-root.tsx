@@ -20,7 +20,7 @@ export class AppRoot {
               <stencil-route component='page-notfound'></stencil-route>
             </stencil-route-switch>
           </stencil-router>
-          <stencil-router-redirect url='/docs/introduction' root='/docs' />
+          {/* <stencil-router-redirect url='/docs/introduction' root='/docs' /> */}
         </main>,
         <app-footer />
     ];
