@@ -42,7 +42,7 @@ export class Home {
       <article class="app-home">
         
         <section class="hero">
-          <img class="logo" src="assets/logo/logo-color.svg" alt="S'more Logo" />
+          <img class="logo" src="/assets/logo/logo-color.svg" alt="S'more Logo" />
           <h3 class="pretagline">Modern, modular Web Components chock-full of</h3>
           <h2 class="tagline">Gooey GUI Goodness</h2>
         </section>
