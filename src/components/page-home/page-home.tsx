@@ -16,6 +16,22 @@ export class Home {
   @State() x = 0;
   @State() y = 0;
 
+  @Listen('window:deviceorientation')
+  protected handleDeviceOrientation(event: DeviceOrientationEvent) {
+    const { gamma, beta } = event;
+    let x = gamma / -90;
+    let y = beta / -180;
+    if (x > 1) { x = 1 }
+    if (x < -1) { x = -1 }
+
+    if (y > 1) { y = 1 }
+    if (y < -1) { y = -1 }
+    this.x = x;
+    this.y = y;
+
+    console.log({ beta, gamma });
+  }
+
 
   @Listen('keydown.enter')
   @Listen('keydown.space')
