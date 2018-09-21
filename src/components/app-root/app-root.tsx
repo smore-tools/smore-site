@@ -1,5 +1,5 @@
 import { Component } from '@stencil/core';
-
+import '@smore/core';
 
 @Component({
   tag: 'app-root',
@@ -22,7 +22,6 @@ export class AppRoot {
               <stencil-route component='page-notfound'></stencil-route>
             </stencil-route-switch>
           </stencil-router>
-          {/*  */}
         </main>,
         <app-footer />
     ];
