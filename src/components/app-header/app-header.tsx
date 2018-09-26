@@ -21,8 +21,9 @@ export class Header {
     ]
 
     @State() pinned = false;
+    @State() direction: 'up'|'down' = null;
 
-    renderMenuItem({ title, url, isExternal }: MenuItem) {
+    private renderMenuItem({ title, url, isExternal }: MenuItem) {
         if (!isExternal) {
             return (
                 <li>

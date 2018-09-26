@@ -1,0 +1,52 @@
+site-document h1 > a,
+site-document h2 > a,
+site-document h3 > a,
+site-document h4 > a,
+site-document h5 > a,
+site-document h6 > a {
+    color: inherit;
+    transition: color 250ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+site-document h1 > a::before,
+site-document h2 > a::before,
+site-document h3 > a::before,
+site-document h4 > a::before,
+site-document h5 > a::before,
+site-document h6 > a::before {
+    content: "#";
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1em;
+    height: 1em;
+    width: 1em;
+    margin-right: 0.5em;
+    margin-left: -1.5em;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-displayish);
+    color: rgba(0,0,0,0.24);
+    opacity: 0;
+
+    transition: all 250ms cubic-bezier(0.23, 1, 0.320, 1);
+    transform: translateX(1em);
+}
+
+site-document h1 > a:hover,
+site-document h2 > a:hover,
+site-document h3 > a:hover,
+site-document h4 > a:hover,
+site-document h5 > a:hover,
+site-document h6 > a:hover {
+    color: var(--color-accent);
+}
+
+site-document h1 > a:hover::before,
+site-document h2 > a:hover::before,
+site-document h3 > a:hover::before,
+site-document h4 > a:hover::before,
+site-document h5 > a:hover::before,
+site-document h6 > a:hover::before {
+    transform: translateX(0);
+    opacity: 1;
+}

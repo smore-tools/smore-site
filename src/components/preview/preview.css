@@ -1,0 +1,70 @@
+:host {
+    display: block;
+    position: relative;
+    background: white;
+    
+    margin: 2em -12px;
+    min-height: 56px;
+}
+
+iframe {
+  border: none;
+  width: calc(100% - 42px);
+  height: calc(var(--height, 56) * 1px);
+  background: white;
+  border-radius: 4px;
+  min-height: 56px;
+  margin-left: 42px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+}
+.overlay svg {
+    fill: rgba(0,0,0,0.32);
+    width: 28px;
+    height: 28px;
+}
+button {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    background: none;
+    border: none;
+    padding: 2px;
+    border-radius: 50%;
+
+    outline: 0;
+
+    transition: background-color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.12);
+}
+button:active,
+button:focus {
+    box-shadow: 0 0 6px 1px var(--color-notify);
+}
+button:hover svg {
+    fill: rgba(0,0,0,0.54);
+}
+
+:host(.is-animating) button {
+    animation: 600ms spin forwards cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Vulf Mono Regular';
+    src:    url('/assets/fonts/Vulf_Mono-Regular_web.eot');
+    src:    url('/assets/fonts/Vulf_Mono-Regular_web.eot?#iefix') format('embedded-opentype'),
+            url('/assets/fonts/Vulf_Mono-Regular_web.woff') format('woff'),
+            url('/assets/fonts/Vulf_Mono-Regular_web.woff2') format('woff2'),
+            url('/assets/fonts/Vulf_Mono-Regular_web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Black Italic';
+    src:    url('/assets/fonts/Vulf_Mono-Black_Italic_web.eot');
+    src:    url('/assets/fonts/Vulf_Mono-Black_Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('/assets/fonts/Vulf_Mono-Black_Italic_web.woff') format('woff'),
+            url('/assets/fonts/Vulf_Mono-Black_Italic_web.woff2') format('woff2'),
+            url('/assets/fonts/Vulf_Mono-Black_Italic_web.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

@@ -48,7 +48,7 @@ page-home .logo {
 }
 
 .pretagline {
-  font-family: var(--font-body);
+  font-family: var(--font-displayish);
   font-weight: normal;
   margin: 0;
   color: rgba(0,0,0,0.54);
@@ -56,8 +56,8 @@ page-home .logo {
 
 .tagline {
   font-family: var(--font-display);
-  margin: 12px;
-  font-size: 32px;
+  margin: 6px;
+  font-size: 36px;
   color: rgba(0,0,0,0.87);
 }
 
@@ -226,6 +226,10 @@ section.next-steps {
   max-width: 1080px;
   margin: 128px auto;
   text-align: center;
+}
+
+section.next-steps h2 {
+  font-size: 2em;
 }
 
 section.next-steps p {

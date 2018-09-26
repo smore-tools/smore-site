@@ -71,14 +71,14 @@ nav ul {
   align-items: center;
   justify-content: center;
 
-  font-family: var(--font-display);
-  font-size: 13px;
+  font-family: var(--font-displayish);
+  font-size: 12px;
   list-style: none;
   padding: 0;
 }
 
 nav ul li {
-  padding: 0 12px;
+  padding: 0 6px;
   opacity: 0.54;
   margin-bottom: -2px;
   cursor: pointer;
@@ -156,4 +156,10 @@ nav .icon {
   margin-left: 4px;
   margin-right: -4px;
   margin-top: -4px;
+}
+
+@media (min-width: 540px) {
+  nav ul li {
+    padding: 0 12px;
+  }
 }

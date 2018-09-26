@@ -1,5 +1,9 @@
+.page.docs {
+    padding-left: 0; 
+    padding-right: 0;
+}
 .docs {
-    display: grid;
+    display: block;
 }
 
 .docs .icon {
@@ -28,7 +32,19 @@
 }
 
 .docs article {
+    padding: 0;
     transition: transform 200ms cubic-bezier(0.23, 1, 0.320, 1);
+    color: #686f79;
+    line-height: 1.5;
+}
+
+.docs article h1,
+.docs article h2,
+.docs article h3,
+.docs article h4,
+.docs article h5,
+.docs article h6 {
+     color: #34383c;
 }
 
 .menu-is-open .docs aside {
@@ -46,14 +62,16 @@
 
     #menu-button { display: none; }
     
-    .docs {
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 16px;
+    .page.docs {
+        max-width: 1080px;
+        display: grid;
+        grid-template-columns: 240px minmax(auto, 700px);
+        grid-gap: 12px;
     }
 
     .docs aside {
         position: unset;
-        width: auto;
+        width: 240px;
         height: 100%;
         padding-top: 0;
         transform: translateX(0);
@@ -64,6 +82,23 @@
 
     .docs article {
         grid-column: 2;
+        max-width: 700px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .docs article h1,
+    .docs article h2,
+    .docs article h3,
+    .docs article h4,
+    .docs article h5,
+    .docs article h6,
+    .docs article p,
+    .docs article ul,
+    .docs article ol {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .menu-is-open .docs aside,

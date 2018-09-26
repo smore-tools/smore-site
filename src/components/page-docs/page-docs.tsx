@@ -1,6 +1,6 @@
-import { Component, Prop, State, Listen } from '@stencil/core';
+import { Component, State, Listen } from '@stencil/core';
+import { DocsMenu } from '../../content';
 import { Menu, Close } from './icons';
-import { MatchResults } from '@stencil/router';
 
 interface MenuItem {
     title: string;
@@ -9,29 +9,12 @@ interface MenuItem {
 
 @Component({
     tag: 'page-docs',
-    styleUrls: ['page-docs.css', 'menu.css']
+    styleUrls: ['page-docs.css', 'menu.css'],
 })
 export class Docs {
 
-    private menu: { title: string, items: MenuItem[] }[] = [
-        {
-            title: 'Getting Started',
-            items: [
-                { title: 'Introduction', url: 'introduction' },
-                { title: 'Installation', url: 'installation' }
-            ]
-        }, {
-            title: 'Components',
-            items: [
-                { title: 'Overview', url: 'components' },
-                { title: 'Async Content', url: 'async-content' },
-                { title: 'Counter', url: 'counter' }
-            ]
-        }
-    ]
-
+    private menu = DocsMenu;
     @State() menuOpen = false;
-    @Prop() match: MatchResults;
 
     @Listen('click')
     protected clickHandler(e: MouseEvent) {
@@ -80,23 +63,20 @@ export class Docs {
     }
 
     render() {
-        if (this.match && this.match.params.name) {
-            return (
-                <div class="page docs">
-                    <aside>
-                        {this.renderMenu()}
-                    </aside>
-                    <article>
-                        <button id="menu-button" class="icon-button" onClick={(e) => this.toggleMenu(e)}>
-                            { !this.menuOpen ? <Menu /> : <Close /> }
-                        </button>
-                        <h1> {this.match.params.name}</h1>
-                        <p>
-                            Hello! My name is {this.match.params.name}.
-                        </p>
-                    </article>
-                </div>
-            );
-        }
+        return (
+            <div class="page docs">
+                <aside>
+                    {this.renderMenu()}
+                </aside>
+                <article>
+                    <button id="menu-button" class="icon-button" onClick={(e) => this.toggleMenu(e)}>
+                        { !this.menuOpen ? <Menu /> : <Close /> }
+                    </button>
+
+                    <slot />
+                    
+                </article>
+            </div>
+        );
     }
 }
