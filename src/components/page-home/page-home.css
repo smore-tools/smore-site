@@ -213,6 +213,7 @@ section.benefits smore-observer.did-enter * {
 }
 
 section.benefits h3 {
+  padding: 0;
   margin-bottom: 0;
 }
 section.benefits p {

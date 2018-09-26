@@ -122,30 +122,30 @@ export class Home {
 
         <section class="benefits">
           <div class="container">
-            <smore-observer mode="in">
+            <div>
               <h3>🌚 Unique</h3>
               <p>You won't find yet another set of buttons and nav menus here, but you will find a unique range of handy micro-interactions.</p>
-            </smore-observer>
-            <smore-observer mode="in">
+            </div>
+            <div>
               <h3>🧐 Unopinionated</h3>
               <p>Style your app, your way. You won't have to wrestle with any S'more-specific styling.</p>
-            </smore-observer>
-            <smore-observer mode="in">
+            </div>
+            <div>
               <h3>📦 Modular</h3>
               <p>Install only what you need, when you need it. Each component is its own module.</p>
-            </smore-observer>
-            <smore-observer mode="in">
+            </div>
+            <div>
               <h3>🆕 Modern</h3>
               <p>Built on modern web-standards, supported in all your favorite browsers.</p>
-            </smore-observer>
-            <smore-observer mode="in">
+            </div>
+            <div>
               <h3>💎 Flexible</h3>
               <p>Built with <a href="https://stenciljs.com">Stencil</a>, S'more components can be used with any framework (or no framework at all!)</p>
-            </smore-observer>
-            <smore-observer mode="in">
+            </div>
+            <div>
               <h3>🎉 Fun</h3>
               <p>With an emphasis on <em>surprise and delight</em>, S'more is as fun for developers as it is for end-users!</p>
-            </smore-observer>
+            </div>
           </div>
         </section>
 
