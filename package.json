@@ -12,7 +12,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@smore/core": "0.0.1-alpha.3",
     "@stencil/core": "^0.11.0",
     "@stencil/router": "^0.2.5",
     "frontmatter": "0.0.3",
