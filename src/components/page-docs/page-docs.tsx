@@ -1,4 +1,5 @@
-import { Component, State, Listen } from '@stencil/core';
+import { Component, State, Listen, Prop } from '@stencil/core';
+import { MatchResults } from '@stencil/router';
 import { DocsMenu } from '../../content';
 import { Menu, Close } from './icons';
 
@@ -15,6 +16,8 @@ export class Docs {
 
     private menu = DocsMenu;
     @State() menuOpen = false;
+
+    @Prop() match: MatchResults;
 
     @Listen('click')
     protected clickHandler(e: MouseEvent) {
@@ -73,7 +76,7 @@ export class Docs {
                         { !this.menuOpen ? <Menu /> : <Close /> }
                     </button>
 
-                    <slot />
+                    <site-document path={this.match.params.path}></site-document>
                     
                 </article>
             </div>

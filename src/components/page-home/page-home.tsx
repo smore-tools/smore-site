@@ -151,14 +151,11 @@ export class Home {
 
         <section class="next-steps">
           <h2>What now? </h2>
-          <p>Explore our documentation or take a look at S'more in action!</p>
+          <p>Explore our documentation to take a look at S'more in action!</p>
 
           <div class="buttons">
             <stencil-route-link url='/docs/introduction'>
               <button> Read the Docs </button>
-            </stencil-route-link>
-            <stencil-route-link url='/demos'>
-              <button> See some Demos </button>
             </stencil-route-link>
           </div>
 

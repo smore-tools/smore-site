@@ -1,41 +1,33 @@
 ---
 title: Getting Started
-description: Stencil has a number of add-ons that you can use with the build process.
+description: S'more can be used with any framework or no framework at all.
 ---
 
-Stencil requires a recent LTS version of [NodeJS](https://nodejs.org/) and npm. Make sure you've installed and/or updated Node before continuing.
+## Using a framework? 
+Check out the Stencil website to read integration guides for [Angular](https://stenciljs.com/docs/angular), [React](https://stenciljs.com/docs/react), [Vue](https://stenciljs.com/docs/vue), and [Ember](https://stenciljs.com/docs/ember).
 
-> Note that you will need to use npm 6 or higher.
+## Using Stencil
 
 ```shell
 npm install @smore/core
 ```
 
-Stencil can be used to create standalone components, or entire apps. After running init
-you will be provided with a prompt so that you can choose the type of project to start.
-
-```shell
-? Pick a starter › - Use arrow-keys. Return to submit.
-
-❯  ionic-pwa     Everything you need to build fast, production ready PWAs
-   app           Minimal starter for building a Stencil app or website
-   component     Collection of web components that can be used anywhere
+Then, in your `<app-root>` component, just import the module.
+```tsx
+import { Component } from '@stencil/core';
+import '@smore/core';
 ```
 
+## Using HTML
+Adding S'more components to your project is as simple as including a single `<script>` tag!
 
-### Updating Stencil
+```html
+<script src="https://unpkg.com/@smore/core/dist/smore.js"> </script>
+```
 
-To get the latest version of @stencil/core you can run:
-`npm install @stencil/core@latest --save-exact`
+If you're using ES Modules, just import the components like so...
 
-<stencil-route-link url="/docs/introduction" router="#router" custom="true">
-  <button class="pull-left btn btn--secondary">
-    Back
-  </button>
-</stencil-route-link>
-
-<stencil-route-link url="/docs/my-first-component" custom="true">
-  <button class="pull-right btn btn--primary">
-    Next
-  </button>
-</stencil-route-link>
+```js
+import { defineCustomElements } from 'https://unpkg.com/@smore/core/dist/esm/es5/smore.define.js';
+defineCustomElements(window);
+```

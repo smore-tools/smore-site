@@ -1,6 +1,6 @@
 import { Component, Listen } from '@stencil/core';
-import { DocsMap } from '../../content';
-import '@smore/core';
+import { TrailMap } from '@smore/trailmap';
+import { DocPaths } from '../../content';
 
 @Component({
   tag: 'app-root',
@@ -34,27 +34,12 @@ export class AppRoot {
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
               <stencil-route url='/' component='page-home' exact={true} />
-              <stencil-route url='/docs' exact={true} routeRender={() => <stencil-router-redirect url='/docs/introduction' />} />
-              <stencil-route url='/docs/' exact={true} routeRender={() => <stencil-router-redirect url='/docs/introduction' />} />
-              <stencil-route
-                url="/docs/:name"
-                routeRender={(props: { [key: string]: any }) => {
-                  if (DocsMap[props.match.params.name]) {
-                    return (
-                      <page-docs>
-                        <site-document path={DocsMap[props.match.params.name]}/>
-                      </page-docs>
-                    );
-                  } else {
-                    return (
-                      <stencil-router-redirect url='404' />
-                    )
-                  }
-                }}
-              />
+
+              <stencil-route url='/testA' routeRender={() => <stencil-router-redirect url='/testB' />} />
+              <TrailMap base='/docs' paths={DocPaths} component='page-docs' />
               <stencil-route url='/demos' component='page-demos' />
               
-              <stencil-route component='page-notfound'></stencil-route>
+              <stencil-route component='page-notfound' />
             </stencil-route-switch>
           </stencil-router>
         </main>,

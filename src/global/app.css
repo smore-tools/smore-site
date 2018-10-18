@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.25;
   font-family: var(--font-body);
   height: 100%;
@@ -34,11 +34,15 @@ h3, h4, h5, h6 {
   font-family: var(--font-displayish);
 }
 
-article h3,
-article h4,
-article h5,
-article h6 {
+page-docs article h3,
+page-docs article h4,
+page-docs article h5,
+page-docs article h6 {
   padding-top: var(--scroll-padding, 0);
+}
+
+article p {
+  color: #686f79;
 }
 
 a {

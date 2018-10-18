@@ -32,8 +32,6 @@ You won't have to manually adjust any number formatting (like prefixes or suffix
 
 That means that all of the following examples will work as you expect them to—keeping prefixes and suffixes intact, counting each number to the same decimal place, and respecting comma-separation.
 
-For semantic reasons, it is still recommended to only include the 
-
 ---
 ```html
 <smore-counter> $20 </smore-counter>

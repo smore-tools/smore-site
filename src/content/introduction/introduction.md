@@ -3,24 +3,17 @@ title: Introduction
 description: 
 ---
 
-S'more is a set of Web Components (Custom Elements) that make your life easier.
+S'more contains a set of miscellaneous Web Components. Based on browser-standard features, S'more components can be used in any framework and in addition to any set of UI components.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies ut orci id ultricies. Maecenas accumsan, arcu non elementum egestas, dui turpis vehicula felis, ac euismod velit justo at ex. In eleifend, ipsum sed consequat malesuada, sapien ligula aliquet ligula, vitae hendrerit elit diam vitae odio. Ut vel est tempor, bibendum ante aliquam, molestie diam. Quisque tincidunt interdum rhoncus. Donec mattis erat sodales leo vestibulum ornare. Phasellus luctus suscipit semper. Fusce ut dolor rutrum, semper mauris nec, laoreet ipsum. Suspendisse sed felis eu urna tincidunt hendrerit sit amet et neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra tellus ac ornare volutpat. Sed in mauris sed tellus pellentesque viverra quis ac tortor.
+## Quickstart 
+Include the following tag in any `.html` file or read about [other installation options](/docs/installation).
+```html
+<script src="https://unpkg.com/@smore/core/dist/smore.js"> </script>
+```
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut non eros auctor, tristique metus vel, suscipit nisl. Suspendisse tortor nunc, blandit nec faucibus a, consectetur vel ex. Praesent nec nisi dolor. Aliquam eu felis a arcu tempor dapibus non eu purus. Cras vestibulum arcu eget erat placerat dapibus. Integer quis metus feugiat ante pharetra efficitur vitae quis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat.
+## About
+S'more components are reusable utilities. They aren't concerned with how things look, so every component can be styled to your liking. The goal of S'more is to reduce the amount of hand-rolled solutions or bloated libraries that power common interactions all over the web.
 
-Etiam condimentum sodales luctus. In eget mi a mi accumsan tempor. Ut hendrerit viverra arcu et commodo. Aliquam non lectus id elit molestie lacinia at at sapien. In vehicula tincidunt lacus, maximus lobortis turpis elementum nec. Duis pretium mauris ac ligula pellentesque rhoncus. Sed lacinia malesuada imperdiet. Curabitur eros massa, dapibus sit amet lacus vel, facilisis finibus ligula. Proin sit amet pretium purus, vel pharetra nulla.
+S'more components are modular, tiny, and performant.
 
-Phasellus rhoncus nibh eget est hendrerit, ut pellentesque libero varius. Morbi accumsan sem arcu, sed viverra mi cursus nec. Phasellus eget ultricies erat, id sodales risus. Nullam ut mollis neque. Sed sed cursus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tristique erat, a scelerisque urna mollis vel.
-
-Sed tincidunt nisl eu sapien hendrerit posuere. Cras egestas tristique nunc, in facilisis nibh euismod nec. Curabitur neque risus, dignissim et nisi eu, ornare porttitor velit. Donec velit tortor, pretium eu quam vitae, lacinia gravida risus. Phasellus porta nibh felis, ut pretium erat imperdiet in. Fusce at fringilla turpis, sit amet ultricies tellus. Vestibulum suscipit eros sed ipsum finibus, vitae ullamcorper velit sagittis. Nam id molestie enim, id lacinia ligula. Suspendisse ultrices metus leo, vitae accumsan tortor dapibus id. Aliquam ut nibh et nisi ultricies bibendum tristique in nibh.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies ut orci id ultricies. Maecenas accumsan, arcu non elementum egestas, dui turpis vehicula felis, ac euismod velit justo at ex. In eleifend, ipsum sed consequat malesuada, sapien ligula aliquet ligula, vitae hendrerit elit diam vitae odio. Ut vel est tempor, bibendum ante aliquam, molestie diam. Quisque tincidunt interdum rhoncus. Donec mattis erat sodales leo vestibulum ornare. Phasellus luctus suscipit semper. Fusce ut dolor rutrum, semper mauris nec, laoreet ipsum. Suspendisse sed felis eu urna tincidunt hendrerit sit amet et neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra tellus ac ornare volutpat. Sed in mauris sed tellus pellentesque viverra quis ac tortor.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut non eros auctor, tristique metus vel, suscipit nisl. Suspendisse tortor nunc, blandit nec faucibus a, consectetur vel ex. Praesent nec nisi dolor. Aliquam eu felis a arcu tempor dapibus non eu purus. Cras vestibulum arcu eget erat placerat dapibus. Integer quis metus feugiat ante pharetra efficitur vitae quis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat.
-
-Etiam condimentum sodales luctus. In eget mi a mi accumsan tempor. Ut hendrerit viverra arcu et commodo. Aliquam non lectus id elit molestie lacinia at at sapien. In vehicula tincidunt lacus, maximus lobortis turpis elementum nec. Duis pretium mauris ac ligula pellentesque rhoncus. Sed lacinia malesuada imperdiet. Curabitur eros massa, dapibus sit amet lacus vel, facilisis finibus ligula. Proin sit amet pretium purus, vel pharetra nulla.
-
-Phasellus rhoncus nibh eget est hendrerit, ut pellentesque libero varius. Morbi accumsan sem arcu, sed viverra mi cursus nec. Phasellus eget ultricies erat, id sodales risus. Nullam ut mollis neque. Sed sed cursus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus tristique erat, a scelerisque urna mollis vel.
-
-Sed tincidunt nisl eu sapien hendrerit posuere. Cras egestas tristique nunc, in facilisis nibh euismod nec. Curabitur neque risus, dignissim et nisi eu, ornare porttitor velit. Donec velit tortor, pretium eu quam vitae, lacinia gravida risus. Phasellus porta nibh felis, ut pretium erat imperdiet in. Fusce at fringilla turpis, sit amet ultricies tellus. Vestibulum suscipit eros sed ipsum finibus, vitae ullamcorper velit sagittis. Nam id molestie enim, id lacinia ligula. Suspendisse ultrices metus leo, vitae accumsan tortor dapibus id. Aliquam ut nibh et nisi ultricies bibendum tristique in nibh.
+I hope you like 'em.

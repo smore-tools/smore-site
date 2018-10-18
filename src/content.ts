@@ -1,12 +1,12 @@
-export const DocsMap: { [key: string]: string } = {
-    'introduction': 'introduction/introduction',
-    'installation': 'introduction/installation',
+export const DocPaths = new Map<string, string>([
+    ['introduction', 'introduction/introduction'],
+    ['installation', 'introduction/installation'],
 
-    'components': 'components/overview',
-    'async-content': 'components/async-content',
-    'counter': 'components/counter',
-    'observer': 'components/observer'
-}
+    ['components', 'components/overview'],
+    ['async-content', 'components/async-content'],
+    ['counter', 'components/counter'],
+    ['observer', 'components/observer']
+])
 
 export const DocsMenu: { title: string, items: MenuItem[] }[] = [
     {
@@ -19,7 +19,7 @@ export const DocsMenu: { title: string, items: MenuItem[] }[] = [
     {
         title: 'Components',
         items: [
-            { title: 'Overview', url: 'components' },
+            // { title: 'Overview', url: 'components' },
             { title: 'Async Content', url: 'async-content' },
             { title: 'Counter', url: 'counter' },
             { title: 'Observer', url: 'observer' }
